@@ -1,0 +1,15 @@
+<launch>
+    <!-- Publisher Node -->
+    <node name="image_publisher" pkg="shadow_removal" type="image_publisher.py" output="screen">
+        <param name="OperationMode" value="realtime"/> <!-- 或 'localfile' -->
+        <param name="CamID" value="0"/>
+        <param name="input_path" value="/home/luni/shadow_removal_project/shadow_ws/src/shadow_removal/samples/image"/>
+        
+    </node>
+
+    <!-- Subscriber Node -->
+    <node name="image_subscriber" pkg="shadow_removal" type="image_subscriber.py" output="screen">
+        <param name="OperationMode" value="realtime"/> <!-- 或 'localfile' -->
+        <param name="output_path" value="/home/luni/shadow_removal_project/shadow_ws/src/shadow_removal/samples/result"/>
+    </node>
+</launch>

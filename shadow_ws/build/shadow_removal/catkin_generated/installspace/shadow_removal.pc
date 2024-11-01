@@ -1,0 +1,8 @@
+prefix=/home/luni/shadow_removal_project/shadow_ws/install
+
+Name: shadow_removal
+Description: Description of shadow_removal
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,2 @@
+shadow_removal
+-DCATKIN_DEVEL_PREFIX=/home/luni/shadow_removal_project/shadow_ws/devel -DCMAKE_INSTALL_PREFIX=/home/luni/shadow_removal_project/shadow_ws/install -G Unix Makefiles
